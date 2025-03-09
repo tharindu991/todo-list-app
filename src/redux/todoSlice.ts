@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Todo } from "../types/todoTypes"; // ✅ Import the global type
+import { Todo } from "../types/todoTypes";
 
 // Define the initial state
 const initialState: Todo[] = [];
@@ -10,7 +10,10 @@ const todoSlice = createSlice({
   reducers: {
     // Add a new todo
     addTodo: (state, action: PayloadAction<string>) => {
-      state.push({ id: Date.now(), text: action.payload });
+      state.push({
+        id: Date.now(), // Generate a unique timestamp based ID for each TODO item
+        text: action.payload,
+      });
     },
     // Remove a todo by ID
     removeTodo: (state, action: PayloadAction<number>) => {
