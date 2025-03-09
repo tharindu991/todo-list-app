@@ -21,7 +21,7 @@ This is a simple Todo List application built with **React, TypeScript, Redux, an
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone <repository-url>
+git clone <https://github.com/tharindu991/todo-list-app>
 cd todo-list-app
 ```
 
